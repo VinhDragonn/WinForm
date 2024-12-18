@@ -1,0 +1,4 @@
+1.Add ad new ADO.net.
+2.Change private QLCaPheEntities12 QL = new QLCaPheEntities12(); in every form to your entity's name.
+3.Run SQL.
+4.You have a project.
