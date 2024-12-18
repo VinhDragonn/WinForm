@@ -75,6 +75,7 @@ namespace test
                     doanhThu.loadListView();
                     taiKhoan.loadListView();
                     thucDon.loadListView();
+                    comboBox_DanhMuc.DataSource = z.Select(item => item.TENDM).ToList();
                 }
             };
         }

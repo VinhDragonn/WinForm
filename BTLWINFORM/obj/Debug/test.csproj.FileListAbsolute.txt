@@ -178,3 +178,15 @@ C:\Users\HP\Downloads\BTLWINFORM\obj\Debug\test.csproj.CoreCompileInputs.cache
 C:\Users\HP\Downloads\BTLWINFORM\obj\Debug\test.csproj.Up2Date
 C:\Users\HP\Downloads\BTLWINFORM\obj\Debug\test.exe
 C:\Users\HP\Downloads\BTLWINFORM\obj\Debug\test.pdb
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.Ban.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.DangKy.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.DangNhap.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.DoanhThu.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.TaiKhoan.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.ThucDon.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.Properties.Resources.resources
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.exe
+C:\Users\HP\OneDrive\Máy tính\WinForm\BTLWINFORM\obj\Debug\test.pdb

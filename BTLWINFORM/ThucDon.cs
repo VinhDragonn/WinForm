@@ -20,10 +20,10 @@ namespace test
         {
             InitializeComponent();
             var danhMucList = QL.LOAD_DANHMUC().ToList();
-            
-          
-            DanhMuc_comboBox.DataSource = danhMucList.Select(item => item.TENDM ).ToList();
-            DanhMuc_comboBox.SelectedIndex=0;
+            DanhMuc_comboBox.DataSource = danhMucList;
+            DanhMuc_comboBox.DisplayMember = "TENDM"; // Hiển thị tên danh mục
+            DanhMuc_comboBox.ValueMember = "IDDM";   // Giá trị thực sẽ là IDDM
+            DanhMuc_comboBox.SelectedIndex = 0;
             loadListView();
 
         }
