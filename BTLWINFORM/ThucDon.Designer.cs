@@ -62,6 +62,7 @@
             this.In_button.TabIndex = 10;
             this.In_button.Text = "In danh sách Menu";
             this.In_button.UseVisualStyleBackColor = false;
+            this.In_button.Click += new System.EventHandler(this.In_button_Click);
             // 
             // groupBox2
             // 

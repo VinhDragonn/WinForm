@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using test.model;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
+using System.IO;
 
 namespace test
 {
@@ -182,6 +185,65 @@ namespace test
                 item.SubItems.Add(customer.DONGIA.ToString("N0", new CultureInfo("vi-VN")));
 
                 listView1.Items.Add(item);
+            }
+        }
+
+        private void In_button_Click(object sender, EventArgs e)
+        {
+            string userDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string wordFilePath = Path.Combine(userDocumentsPath, "MenuCaPhe.docx");
+
+            try
+            {
+                using (var document = DocX.Create(wordFilePath))
+                {
+                    // Tiêu đề
+                    document.InsertParagraph("MENU CÀ PHÊ")
+                        .FontSize(24)
+                        .Bold()
+                        .Color(Color.Blue)
+                        .SpacingAfter(20)
+                        .Alignment = Alignment.center;
+
+                    // Tạo bảng
+                    var list = QL.LOAD_DOUONG().ToList();
+                    var table = document.AddTable(list.Count + 1, 4);
+                    table.Design = TableDesign.MediumGrid1Accent2;
+
+                    // Tiêu đề bảng
+                    table.Rows[0].Cells[0].Paragraphs[0]
+                           .Append("ID").Bold().Color(Color.White).Alignment = Alignment.center;
+                    table.Rows[0].Cells[1].Paragraphs[0].Append("Loại").Bold().Color(Color.White).Alignment = Alignment.center;
+                    table.Rows[0].Cells[2].Paragraphs[0].Append("Tên Đồ Uống").Bold().Color(Color.White).Alignment = Alignment.center;
+                    table.Rows[0].Cells[3].Paragraphs[0].Append("Đơn Giá").Bold().Color(Color.White).Alignment = Alignment.center;
+
+                    table.Rows[0].Cells[0].FillColor = Color.DarkBlue;
+                    table.Rows[0].Cells[1].FillColor = Color.DarkBlue;
+                    table.Rows[0].Cells[2].FillColor = Color.DarkBlue;
+                    table.Rows[0].Cells[3].FillColor = Color.DarkBlue;
+
+                    // Nội dung bảng
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        var item = list[i];
+                        table.Rows[i + 1].Cells[0].Paragraphs[0].Append(item.IDDOUONG.ToString()).Alignment = Alignment.center;
+                        table.Rows[i + 1].Cells[1].Paragraphs[0].Append(item.IDDM.ToString() == "1" ? "Nước" : "Đồ ăn").Alignment = Alignment.center;
+                        table.Rows[i + 1].Cells[2].Paragraphs[0].Append(item.TENDOUONG).Alignment = Alignment.center;
+                        table.Rows[i + 1].Cells[3].Paragraphs[0].Append(item.DONGIA.ToString("N0", new CultureInfo("vi-VN"))).Alignment = Alignment.center;
+                    }
+
+                    // Chèn bảng vào tài liệu
+                    document.InsertTable(table);
+
+                    // Lưu tài liệu
+                    document.Save();
+
+                    MessageBox.Show("Xuất dữ liệu thành công! File đã được lưu tại: " + wordFilePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
 

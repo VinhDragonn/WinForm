@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|c:\\users\\hp\\onedrive\\m\u00E1y t\u00EDnh\\winform\\btlwinform\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|c:\\users\\hp\\onedrive\\m\u00E1y t\u00EDnh\\winform\\btlwinform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -69,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +86,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ban.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\Ban.cs",
               "RelativeDocumentMoniker": "Ban.cs",
@@ -100,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -113,18 +113,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DangXuat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangXuat.cs",
               "RelativeDocumentMoniker": "DangXuat.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangXuat.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\Documents\\BTLWINFORM\\DangXuat.cs [Design]",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangXuat.cs [Design]",
+              "RelativeToolTip": "DangXuat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:53:23.015Z"
+              "WhenOpened": "2024-12-17T14:53:23.015Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\Table.cs",
               "RelativeDocumentMoniker": "Table.cs",
@@ -132,11 +133,12 @@
               "RelativeToolTip": "Table.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:25:33.657Z"
+              "WhenOpened": "2024-12-17T14:25:33.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DangKy.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangKy.cs",
               "RelativeDocumentMoniker": "DangKy.cs",
@@ -144,22 +146,24 @@
               "RelativeToolTip": "DangKy.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAYwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:54:27.248Z"
+              "WhenOpened": "2024-12-17T13:54:27.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DangKy.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangKy.cs",
               "RelativeDocumentMoniker": "DangKy.cs",
-              "ToolTip": "C:\\Users\\HP\\Downloads\\BTLWINFORM\\DangKy.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BTLWINFORM\\DangKy.cs [Design]",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangKy.cs [Design]",
+              "RelativeToolTip": "DangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:43:47.719Z"
+              "WhenOpened": "2024-12-17T13:43:47.719Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DoanhThu.Designer.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DoanhThu.Designer.cs",
               "RelativeDocumentMoniker": "DoanhThu.Designer.cs",
@@ -167,33 +171,36 @@
               "RelativeToolTip": "DoanhThu.Designer.cs",
               "ViewState": "AQIAAKsAAAAAAAAAAAAQwMAAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T14:19:54.226Z"
+              "WhenOpened": "2024-12-16T14:19:54.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DoanhThu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DoanhThu.cs",
               "RelativeDocumentMoniker": "DoanhThu.cs",
-              "ToolTip": "C:\\Users\\HP\\Downloads\\BTLWINFORM\\DoanhThu.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BTLWINFORM\\DoanhThu.cs [Design]",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DoanhThu.cs [Design]",
+              "RelativeToolTip": "DoanhThu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:28:47.17Z"
+              "WhenOpened": "2024-11-06T05:28:47.17Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TaiKhoan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "TaiKhoan.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\TaiKhoan.cs [Design]",
               "RelativeToolTip": "TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:04:34.655Z"
+              "WhenOpened": "2024-11-06T05:04:34.655Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "ThucDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\ThucDon.cs",
               "RelativeDocumentMoniker": "ThucDon.cs",
@@ -211,14 +218,14 @@
               "RelativeDocumentMoniker": "ThucDon.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\ThucDon.cs",
               "RelativeToolTip": "ThucDon.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAABAAAA",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAO0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T14:42:27.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -226,11 +233,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwBYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T02:33:59.444Z"
+              "WhenOpened": "2024-12-11T02:33:59.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Ban.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\Ban.cs",
               "RelativeDocumentMoniker": "Ban.cs",
@@ -242,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "TaiKhoan.cs",
@@ -250,11 +258,12 @@
               "RelativeToolTip": "TaiKhoan.cs",
               "ViewState": "AQIAAFsAAAAAAAAAAAAkwGoAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T13:18:50.061Z"
+              "WhenOpened": "2024-11-17T13:18:50.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DoanhThu.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DoanhThu.cs",
               "RelativeDocumentMoniker": "DoanhThu.cs",
@@ -262,22 +271,24 @@
               "RelativeToolTip": "DoanhThu.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABAAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:02:12.504Z"
+              "WhenOpened": "2024-11-06T06:02:12.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangNhap.cs",
               "RelativeDocumentMoniker": "DangNhap.cs",
-              "ToolTip": "C:\\Users\\HP\\Downloads\\BTLWINFORM\\DangNhap.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BTLWINFORM\\DangNhap.cs [Design]",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangNhap.cs [Design]",
+              "RelativeToolTip": "DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:40:03.648Z"
+              "WhenOpened": "2024-11-19T13:40:03.648Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DangNhap.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\DangNhap.cs",
               "RelativeDocumentMoniker": "DangNhap.cs",
@@ -285,11 +296,12 @@
               "RelativeToolTip": "DangNhap.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAwA8AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:50:41.017Z"
+              "WhenOpened": "2024-11-19T13:50:41.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Ban.Designer.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\M\u00E1y t\u00EDnh\\WinForm\\BTLWINFORM\\Ban.Designer.cs",
               "RelativeDocumentMoniker": "Ban.Designer.cs",
