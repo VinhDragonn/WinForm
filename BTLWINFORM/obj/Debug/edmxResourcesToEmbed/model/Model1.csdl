@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLCaPheModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DANHMUC_DOUONG">
+    <Key>
+      <PropertyRef Name="IDDM" />
+    </Key>
+    <Property Name="IDDM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENDM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="DOUONGs" Relationship="Self.FK_IDDM" FromRole="DANHMUC_DOUONG" ToRole="DOUONG" />
+  </EntityType>
+  <EntityType Name="DOUONG">
+    <Key>
+      <PropertyRef Name="IDDOUONG" />
+    </Key>
+    <Property Name="IDDOUONG" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDDM" Type="Int32" Nullable="false" />
+    <Property Name="TENDOUONG" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DONGIA" Type="Double" Nullable="false" />
+    <NavigationProperty Name="DANHMUC_DOUONG" Relationship="Self.FK_IDDM" FromRole="DOUONG" ToRole="DANHMUC_DOUONG" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="IDHOADON" />
+    </Key>
+    <Property Name="IDHOADON" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDBAN" Type="Int32" Nullable="false" />
+    <Property Name="TenMon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="DonGia" Type="Int32" />
+    <Property Name="ThanhTien" Type="Int32" />
+    <NavigationProperty Name="TableFood" Relationship="Self.FK_IDBANHD" FromRole="HOADON" ToRole="TableFood" />
+  </EntityType>
+  <EntityType Name="TableFood">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HOADONs" Relationship="Self.FK_IDBANHD" FromRole="TableFood" ToRole="HOADON" />
+    <NavigationProperty Name="HOADON_OLD" Relationship="QLCaPheModel.FK_IDBAN" FromRole="TableFood" ToRole="HOADON_OLD" />
+    <Property Name="TenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_IDDM">
+    <End Role="DANHMUC_DOUONG" Type="Self.DANHMUC_DOUONG" Multiplicity="1" />
+    <End Role="DOUONG" Type="Self.DOUONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DANHMUC_DOUONG">
+        <PropertyRef Name="IDDM" />
+      </Principal>
+      <Dependent Role="DOUONG">
+        <PropertyRef Name="IDDM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDBANHD">
+    <End Role="TableFood" Type="Self.TableFood" Multiplicity="1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableFood">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="IDBAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLCaPheEntities12" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DANHMUC_DOUONG" EntityType="Self.DANHMUC_DOUONG" />
+    <EntitySet Name="DOUONGs" EntityType="Self.DOUONG" />
+    <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
+    <EntitySet Name="TableFoods" EntityType="Self.TableFood" />
+    <AssociationSet Name="FK_IDDM" Association="Self.FK_IDDM">
+      <End Role="DANHMUC_DOUONG" EntitySet="DANHMUC_DOUONG" />
+      <End Role="DOUONG" EntitySet="DOUONGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDBANHD" Association="Self.FK_IDBANHD">
+      <End Role="TableFood" EntitySet="TableFoods" />
+      <End Role="HOADON" EntitySet="HOADONs" />
+    </AssociationSet>
+    <FunctionImport Name="DELETE_DANHMUC">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DOUONG">
+      <Parameter Name="IDDOUONG" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetTableList" ReturnType="Collection(QLCaPheModel.GetTableList_Result)" />
+    <FunctionImport Name="INSERT_DANHMUC">
+      <Parameter Name="TENDM" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DOUONG">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_HOA_DON">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TenMon" Mode="In" Type="String" />
+      <Parameter Name="SoLuong" Mode="In" Type="Int32" />
+      <Parameter Name="DonGia" Mode="In" Type="Int32" />
+      <Parameter Name="ThanhTien" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertTableList">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_DANHMUC" ReturnType="Collection(QLCaPheModel.LOAD_DANHMUC_Result)" />
+    <FunctionImport Name="LOAD_DOUONG" ReturnType="Collection(QLCaPheModel.LOAD_DOUONG_Result)" />
+    <FunctionImport Name="LOAD_DOUONG_ID" ReturnType="Collection(QLCaPheModel.LOAD_DOUONG_ID_Result)">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_DOUONG_WITH_WHERE" ReturnType="Collection(QLCaPheModel.LOAD_DOUONG_WITH_WHERE_Result)">
+      <Parameter Name="MADM" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_HOA_DON" ReturnType="Collection(QLCaPheModel.LOAD_HOA_DON_Result)" />
+    <FunctionImport Name="LOAD_INDSDOUONG" ReturnType="Collection(QLCaPheModel.LOAD_INDSDOUONG_Result)" />
+    <FunctionImport Name="ThemTableList">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="TIM_TENDOUONG" ReturnType="Collection(QLCaPheModel.TIM_TENDOUONG_Result)">
+      <Parameter Name="TEN" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_DANHMUC">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+      <Parameter Name="TENDM" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_DOUONG">
+      <Parameter Name="IDDOUONG" Mode="In" Type="Int32" />
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <EntitySet Name="NHANVIENs" EntityType="QLCaPheModel.NHANVIEN" />
+    <FunctionImport Name="INSERT_NHANVIEN">
+      <Parameter Name="TENNV" Mode="In" Type="String" />
+      <Parameter Name="NGAYSINH" Mode="In" Type="DateTime" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="GIOITINH" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="TAIKHOANs" EntityType="QLCaPheModel.TAIKHOAN" />
+    <AssociationSet Name="FK_IDNVTK" Association="QLCaPheModel.FK_IDNVTK">
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOANs" />
+    </AssociationSet>
+    <FunctionImport Name="INSERT_TAIKHOAN">
+      <Parameter Name="TENTK" Mode="In" Type="String" />
+      <Parameter Name="MATKHAU" Mode="In" Type="String" />
+      <Parameter Name="QUYEN" Mode="In" Type="String" />
+      <Parameter Name="IDNV" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_NHANVIEN" ReturnType="Collection(QLCaPheModel.LOAD_NHANVIEN_Result)" />
+    <EntitySet Name="HOADON_OLD" EntityType="QLCaPheModel.HOADON_OLD" />
+    <AssociationSet Name="FK_IDBAN" Association="QLCaPheModel.FK_IDBAN">
+      <End Role="TableFood" EntitySet="TableFoods" />
+      <End Role="HOADON_OLD" EntitySet="HOADON_OLD" />
+    </AssociationSet>
+    <FunctionImport Name="INSERT_HOADON_OLD">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TENNV" Mode="In" Type="String" />
+      <Parameter Name="TENMONAN" Mode="In" Type="String" />
+      <Parameter Name="NGAYLAP" Mode="In" Type="DateTime" />
+      <Parameter Name="TONGTIEN" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="ThanhToanTableList">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_TAIKHOAN" ReturnType="Collection(QLCaPheModel.LOAD_TAIKHOAN_Result)" />
+    <FunctionImport Name="LOADTAIKHOAN" ReturnType="Collection(QLCaPheModel.LOADTAIKHOAN_Result)">
+      <Parameter Name="TK" Mode="In" Type="String" />
+      <Parameter Name="MK" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="LOADTAIKHOANVANHANVIEN" ReturnType="Collection(QLCaPheModel.LOADTAIKHOANVANHANVIEN_Result)" />
+    <FunctionImport Name="LOADTAIKHOANVANHANVIEN2" ReturnType="Collection(QLCaPheModel.LOADTAIKHOANVANHANVIEN2_Result)" />
+    <FunctionImport Name="LOADTAIKHOANVANHANVIEN3" ReturnType="Collection(QLCaPheModel.LOADTAIKHOANVANHANVIEN3_Result)" />
+    <FunctionImport Name="LOADHOADON_OLD" ReturnType="Collection(QLCaPheModel.LOADHOADON_OLD_Result)" />
+    <FunctionImport Name="DELETE_HOA_DON">
+      <Parameter Name="idban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteBanDaThanhToan">
+      <Parameter Name="idban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EDIT_HOA_DON">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TenMon" Mode="In" Type="String" />
+      <Parameter Name="SoLuong" Mode="In" Type="Int32" />
+      <Parameter Name="DonGia" Mode="In" Type="Int32" />
+      <Parameter Name="ThanhTien" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_HOA_DON2">
+      <Parameter Name="idban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_HOA_DON_NEW" ReturnType="Collection(QLCaPheModel.LOAD_HOA_DON_NEW_Result)" />
+    <FunctionImport Name="DELETE_HOA_DON3">
+      <Parameter Name="idHD" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EDIT_HOA_DON_NEW">
+      <Parameter Name="IDHD" Mode="In" Type="Int32" />
+      <Parameter Name="TenMon" Mode="In" Type="String" />
+      <Parameter Name="SoLuong" Mode="In" Type="Int32" />
+      <Parameter Name="DonGia" Mode="In" Type="Int32" />
+      <Parameter Name="ThanhTien" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DOUONG2">
+      <Parameter Name="IDDOUONG" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DOUONG3">
+      <Parameter Name="IDDOUONG" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_POSITION">
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_POSITION2">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_DOUONG2">
+      <Parameter Name="IDDOUONG" Mode="In" Type="Int32" />
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="LOADTAIKHOANVANHANVIEN4" ReturnType="Collection(QLCaPheModel.LOADTAIKHOANVANHANVIEN4_Result)" />
+    <FunctionImport Name="DELETE_TAI_KHOAN_VA_NHAN_VIEN">
+      <Parameter Name="idHD" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ConfigureCascadeDelete" />
+    <FunctionImport Name="DELETE_TAI_KHOAN_VA_NHAN_VIEN2">
+      <Parameter Name="idHD" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_NHAN_VIEN_VA_TK">
+      <Parameter Name="IDNV" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_POSITION_NV_TK">
+      <Parameter Name="TENNV" Mode="In" Type="String" />
+      <Parameter Name="NGAYSINH" Mode="In" Type="DateTime" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="GIOITINH" Mode="In" Type="String" />
+      <Parameter Name="TENTK" Mode="In" Type="String" />
+      <Parameter Name="MATKHAU" Mode="In" Type="String" />
+      <Parameter Name="QUYEN" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_NV_TK">
+      <Parameter Name="idNV" Mode="In" Type="Int32" />
+      <Parameter Name="TENNV" Mode="In" Type="String" />
+      <Parameter Name="NGAYSINH" Mode="In" Type="DateTime" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="GIOITINH" Mode="In" Type="String" />
+      <Parameter Name="TENTK" Mode="In" Type="String" />
+      <Parameter Name="MATKHAU" Mode="In" Type="String" />
+      <Parameter Name="QUYEN" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_DO_UONG">
+      <Parameter Name="IDDM" Mode="In" Type="Int32" />
+      <Parameter Name="TENDOUONG" Mode="In" Type="String" />
+      <Parameter Name="DONGIA" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_TK_DE_LOGIN" ReturnType="Collection(QLCaPheModel.LOAD_TK_DE_LOGIN_Result)" />
+    <FunctionImport Name="LOAD_TK_DE_LOGIN2" ReturnType="Collection(QLCaPheModel.LOAD_TK_DE_LOGIN2_Result)" />
+    <FunctionImport Name="LOAD_TK_DE_LOGIN3" ReturnType="Collection(QLCaPheModel.LOAD_TK_DE_LOGIN3_Result)" />
+    <FunctionImport Name="LOADTAIKHOANVANHANVIEN5" ReturnType="Collection(QLCaPheModel.LOADTAIKHOANVANHANVIEN5_Result)" />
+    <FunctionImport Name="LOAD_TK_NHAN_VIEN_DE_TIM" ReturnType="Collection(QLCaPheModel.LOAD_TK_NHAN_VIEN_DE_TIM_Result)" />
+    <FunctionImport Name="XOA_BAN">
+      <Parameter Name="Idban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="XOA_TABLE">
+      <Parameter Name="Idban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_TABLE" />
+    <FunctionImport Name="DELETE_ALL_HOA_DON">
+      <Parameter Name="IDban" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_TABLE2" />
+    <FunctionImport Name="Them_DATA_VAO_TABLE">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+      <Parameter Name="Tenkh" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Get_ALL_Table" ReturnType="Collection(QLCaPheModel.Get_ALL_Table_Result)" />
+    <FunctionImport Name="XOA_MON_CUOI_CUNG_TRONG_LIST_VIEW">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_HOA_DON_VOI_ID">
+      <Parameter Name="IDhoaDon" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IN_FIRST_AVAILABLE_HOA_DON">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TenMon" Mode="In" Type="String" />
+      <Parameter Name="SoLuong" Mode="In" Type="Int32" />
+      <Parameter Name="DonGia" Mode="In" Type="Int32" />
+      <Parameter Name="ThanhTien" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_INSERT_OR_UPDATE_IN_FIRST_AVAILABLE_HOA_DON">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TenMon" Mode="In" Type="String" />
+      <Parameter Name="SoLuong" Mode="In" Type="Int32" />
+      <Parameter Name="DonGia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_HOADON_THANH_TOAN">
+      <Parameter Name="IDBAN" Mode="In" Type="Int32" />
+      <Parameter Name="TENNV" Mode="In" Type="String" />
+      <Parameter Name="TENMONAN" Mode="In" Type="String" />
+      <Parameter Name="TENKH" Mode="In" Type="String" />
+      <Parameter Name="NGAYLAP" Mode="In" Type="DateTime" />
+      <Parameter Name="TONGTIEN" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="LOAD_HOA_DON_THANH_TOAN" ReturnType="Collection(QLCaPheModel.LOAD_HOA_DON_THANH_TOAN_Result)" />
+    <FunctionImport Name="ThanhToanTableList2">
+      <Parameter Name="a" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetTableList_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="ten" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="status" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="LOAD_DANHMUC_Result">
+    <Property Type="Int32" Name="IDDM" Nullable="false" />
+    <Property Type="String" Name="TENDM" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="LOAD_DOUONG_Result">
+    <Property Type="Int32" Name="IDDOUONG" Nullable="false" />
+    <Property Type="Int32" Name="IDDM" Nullable="false" />
+    <Property Type="String" Name="TENDM" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TENDOUONG" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="DONGIA" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_DOUONG_ID_Result">
+    <Property Type="String" Name="TENDOUONG" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="DONGIA" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_DOUONG_WITH_WHERE_Result">
+    <Property Type="Int32" Name="IDDOUONG" Nullable="false" />
+    <Property Type="Int32" Name="IDDM" Nullable="false" />
+    <Property Type="String" Name="TENDOUONG" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="DONGIA" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_HOA_DON_Result">
+    <Property Type="Int32" Name="IDBAN" Nullable="false" />
+    <Property Type="String" Name="TenMon" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="Int32" Name="DonGia" Nullable="true" />
+    <Property Type="Int32" Name="ThanhTien" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="LOAD_INDSDOUONG_Result">
+    <Property Type="String" Name="TENDOUONG" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="DONGIA" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TIM_TENDOUONG_Result">
+    <Property Type="Int32" Name="IDDOUONG" Nullable="false" />
+    <Property Type="String" Name="TENDM" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TENDOUONG" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="DONGIA" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENNV" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NGAYSINH" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SDT" Type="String" Nullable="false" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="GIOITINH" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="TAIKHOANs" Relationship="QLCaPheModel.FK_IDNVTK" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="TENTK" />
+    </Key>
+    <Property Name="TENTK" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MATKHAU" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QUYEN" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IDNV" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NHANVIEN" Relationship="QLCaPheModel.FK_IDNVTK" FromRole="TAIKHOAN" ToRole="NHANVIEN" />
+  </EntityType>
+  <Association Name="FK_IDNVTK">
+    <End Type="QLCaPheModel.NHANVIEN" Role="NHANVIEN" Multiplicity="1" />
+    <End Type="QLCaPheModel.TAIKHOAN" Role="TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="LOAD_NHANVIEN_Result">
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <EntityType Name="HOADON_OLD">
+    <Key>
+      <PropertyRef Name="IDHD_OLD" />
+    </Key>
+    <Property Name="IDHD_OLD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDBAN" Type="Int32" Nullable="false" />
+    <Property Name="TENNV" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TENMONAN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NGAYLAP" Type="DateTime" Precision="0" />
+    <Property Name="TONGTIEN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TableFood" Relationship="QLCaPheModel.FK_IDBAN" FromRole="HOADON_OLD" ToRole="TableFood" />
+    <Property Name="TENKH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_IDBAN">
+    <End Type="QLCaPheModel.TableFood" Role="TableFood" Multiplicity="1" />
+    <End Type="QLCaPheModel.HOADON_OLD" Role="HOADON_OLD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableFood">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HOADON_OLD">
+        <PropertyRef Name="IDBAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="LOAD_TAIKHOAN_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOAN_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+    <Property Type="Int32" Name="IDNV1" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOANVANHANVIEN_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+    <Property Type="Int32" Name="IDNV1" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOANVANHANVIEN2_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOANVANHANVIEN3_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+  </ComplexType>
+  <ComplexType Name="LOADHOADON_OLD_Result">
+    <Property Type="Int32" Name="IDBAN" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="TENMONAN" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="TONGTIEN" Nullable="false" />
+    <Property Type="DateTime" Name="NGAYLAP" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="LOAD_HOA_DON_NEW_Result">
+    <Property Type="Int32" Name="IDHOADON" Nullable="false" />
+    <Property Type="Int32" Name="IDBAN" Nullable="false" />
+    <Property Type="String" Name="TenMon" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="Int32" Name="DonGia" Nullable="true" />
+    <Property Type="Int32" Name="ThanhTien" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOANVANHANVIEN4_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_TK_DE_LOGIN_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_TK_DE_LOGIN2_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+    <Property Type="Int32" Name="IDNV1" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="LOAD_TK_DE_LOGIN3_Result">
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOADTAIKHOANVANHANVIEN5_Result">
+    <Property Type="Int32" Name="IDNV" Nullable="false" />
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="Int32" Name="IDNV1" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LOAD_TK_NHAN_VIEN_DE_TIM_Result">
+    <Property Type="Int32" Name="IDNV_A" Nullable="false" />
+    <Property Type="String" Name="TENTK" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MATKHAU" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="QUYEN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="3" />
+    <Property Type="DateTime" Name="NGAYSINH" Nullable="false" />
+    <Property Type="String" Name="SDT" Nullable="false" MaxLength="12" />
+    <Property Type="Int32" Name="IDNV_B" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Get_ALL_Table_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="ten" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="status" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="LOAD_HOA_DON_THANH_TOAN_Result">
+    <Property Type="Int32" Name="IDBAN" Nullable="false" />
+    <Property Type="String" Name="TENNV" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="TENMONAN" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="TONGTIEN" Nullable="false" />
+    <Property Type="String" Name="TENKH" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="NGAYLAP" Nullable="true" />
+  </ComplexType>
+</Schema>

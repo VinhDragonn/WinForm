@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLCaPheModelStoreContainer" CdmEntityContainer="QLCaPheEntities4">
+    <EntitySetMapping Name="TableFoods">
+      <EntityTypeMapping TypeName="QLCaPheModel.TableFood">
+        <MappingFragment StoreEntitySet="TableFood">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

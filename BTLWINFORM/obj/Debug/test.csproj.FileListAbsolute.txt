@@ -1,0 +1,138 @@
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\test.exe.config
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.Properties.Resources.resources
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Buffers.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Memory.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Net.Http.Json.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Text.Json.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.ValueTuple.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Buffers.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Memory.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Net.Http.Json.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Text.Json.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\System.ValueTuple.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.csproj.Up2Date
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.Ban.resources
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.ThucDon.resources
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.TaiKhoan.resources
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.DoanhThu.resources
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\EntityFramework.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\EntityFramework.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\OneDrive\Documents\luu c#\test\obj\Debug\test.DangNhap.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\test.exe.config
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\EntityFramework.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Buffers.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Memory.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Net.Http.Json.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Text.Json.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.ValueTuple.dll
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\EntityFramework.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Buffers.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Memory.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Net.Http.Json.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Text.Json.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\bin\Debug\System.ValueTuple.xml
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.Ban.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.DangNhap.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.DoanhThu.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.TaiKhoan.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.ThucDon.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.Properties.Resources.resources
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.csproj.Up2Date
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\luu c#\BTLWINFORM\obj\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\EntityFramework.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\test.exe.config
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Buffers.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Drawing.Common.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Memory.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Net.Http.Json.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Text.Json.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.ValueTuple.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\EntityFramework.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Buffers.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Drawing.Common.pdb
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Drawing.Common.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Memory.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Net.Http.Json.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Text.Json.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\System.ValueTuple.xml
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.Ban.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.DangKy.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.DangNhap.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.DoanhThu.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.TaiKhoan.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.ThucDon.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.Properties.Resources.resources
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.csproj.Up2Date
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.exe
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\obj\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\test.pdb
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Spire.Doc.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Xceed.Document.NET.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Xceed.Pdf.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Xceed.Words.NET.dll
+C:\Users\HP\OneDrive\Documents\BTLWINFORM\bin\Debug\Spire.Doc.xml

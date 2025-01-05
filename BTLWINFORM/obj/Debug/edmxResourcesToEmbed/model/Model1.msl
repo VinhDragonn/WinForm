@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLCaPheModelStoreContainer" CdmEntityContainer="QLCaPheEntities12">
+    <EntitySetMapping Name="DANHMUC_DOUONG">
+      <EntityTypeMapping TypeName="QLCaPheModel.DANHMUC_DOUONG">
+        <MappingFragment StoreEntitySet="DANHMUC_DOUONG">
+          <ScalarProperty Name="IDDM" ColumnName="IDDM" />
+          <ScalarProperty Name="TENDM" ColumnName="TENDM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOUONGs">
+      <EntityTypeMapping TypeName="QLCaPheModel.DOUONG">
+        <MappingFragment StoreEntitySet="DOUONG">
+          <ScalarProperty Name="IDDOUONG" ColumnName="IDDOUONG" />
+          <ScalarProperty Name="IDDM" ColumnName="IDDM" />
+          <ScalarProperty Name="TENDOUONG" ColumnName="TENDOUONG" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="QLCaPheModel.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="IDHOADON" ColumnName="IDHOADON" />
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="TenMon" ColumnName="TenMon" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableFoods">
+      <EntityTypeMapping TypeName="QLCaPheModel.TableFood">
+        <MappingFragment StoreEntitySet="TableFood">
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DELETE_DANHMUC" FunctionName="QLCaPheModel.Store.DELETE_DANHMUC" />
+    <FunctionImportMapping FunctionImportName="GetTableList" FunctionName="QLCaPheModel.Store.GetTableList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.GetTableList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_DANHMUC" FunctionName="QLCaPheModel.Store.INSERT_DANHMUC" />
+    <FunctionImportMapping FunctionImportName="INSERT_HOA_DON" FunctionName="QLCaPheModel.Store.INSERT_HOA_DON" />
+    <FunctionImportMapping FunctionImportName="InsertTableList" FunctionName="QLCaPheModel.Store.InsertTableList" />
+    <FunctionImportMapping FunctionImportName="LOAD_DANHMUC" FunctionName="QLCaPheModel.Store.LOAD_DANHMUC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_DANHMUC_Result">
+          <ScalarProperty Name="IDDM" ColumnName="IDDM" />
+          <ScalarProperty Name="TENDM" ColumnName="TENDM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_DOUONG" FunctionName="QLCaPheModel.Store.LOAD_DOUONG">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_DOUONG_Result">
+          <ScalarProperty Name="IDDOUONG" ColumnName="IDDOUONG" />
+          <ScalarProperty Name="IDDM" ColumnName="IDDM" />
+          <ScalarProperty Name="TENDM" ColumnName="TENDM" />
+          <ScalarProperty Name="TENDOUONG" ColumnName="TENDOUONG" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_DOUONG_ID" FunctionName="QLCaPheModel.Store.LOAD_DOUONG_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_DOUONG_ID_Result">
+          <ScalarProperty Name="TENDOUONG" ColumnName="TENDOUONG" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_DOUONG_WITH_WHERE" FunctionName="QLCaPheModel.Store.LOAD_DOUONG_WITH_WHERE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_DOUONG_WITH_WHERE_Result">
+          <ScalarProperty Name="IDDOUONG" ColumnName="IDDOUONG" />
+          <ScalarProperty Name="IDDM" ColumnName="IDDM" />
+          <ScalarProperty Name="TENDOUONG" ColumnName="TENDOUONG" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_HOA_DON" FunctionName="QLCaPheModel.Store.LOAD_HOA_DON">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_HOA_DON_Result">
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="TenMon" ColumnName="TenMon" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_INDSDOUONG" FunctionName="QLCaPheModel.Store.LOAD_INDSDOUONG">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_INDSDOUONG_Result">
+          <ScalarProperty Name="TENDOUONG" ColumnName="TENDOUONG" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ThemTableList" FunctionName="QLCaPheModel.Store.ThemTableList" />
+    <FunctionImportMapping FunctionImportName="UPDATE_DANHMUC" FunctionName="QLCaPheModel.Store.UPDATE_DANHMUC" />
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="QLCaPheModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_NHANVIEN" FunctionName="QLCaPheModel.Store.INSERT_NHANVIEN" />
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="QLCaPheModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="TENTK" ColumnName="TENTK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADON_OLD">
+      <EntityTypeMapping TypeName="QLCaPheModel.HOADON_OLD">
+        <MappingFragment StoreEntitySet="HOADON_OLD">
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+          <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
+          <ScalarProperty Name="TENMONAN" ColumnName="TENMONAN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="IDHD_OLD" ColumnName="IDHD_OLD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_HOADON_OLD" FunctionName="QLCaPheModel.Store.INSERT_HOADON_OLD" />
+    <FunctionImportMapping FunctionImportName="ThanhToanTableList" FunctionName="QLCaPheModel.Store.ThanhToanTableList" />
+    <FunctionImportMapping FunctionImportName="LOADHOADON_OLD" FunctionName="QLCaPheModel.Store.LOADHOADON_OLD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOADHOADON_OLD_Result">
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="TENMONAN" ColumnName="TENMONAN" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+          <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteBanDaThanhToan" FunctionName="QLCaPheModel.Store.DeleteBanDaThanhToan" />
+    <FunctionImportMapping FunctionImportName="LOAD_HOA_DON_NEW" FunctionName="QLCaPheModel.Store.LOAD_HOA_DON_NEW">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_HOA_DON_NEW_Result">
+          <ScalarProperty Name="IDHOADON" ColumnName="IDHOADON" />
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="TenMon" ColumnName="TenMon" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DELETE_HOA_DON3" FunctionName="QLCaPheModel.Store.DELETE_HOA_DON3" />
+    <FunctionImportMapping FunctionImportName="EDIT_HOA_DON_NEW" FunctionName="QLCaPheModel.Store.EDIT_HOA_DON_NEW" />
+    <FunctionImportMapping FunctionImportName="DELETE_DOUONG3" FunctionName="QLCaPheModel.Store.DELETE_DOUONG3" />
+    <FunctionImportMapping FunctionImportName="UPDATE_DOUONG2" FunctionName="QLCaPheModel.Store.UPDATE_DOUONG2" />
+    <FunctionImportMapping FunctionImportName="LOADTAIKHOANVANHANVIEN4" FunctionName="QLCaPheModel.Store.LOADTAIKHOANVANHANVIEN4">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOADTAIKHOANVANHANVIEN4_Result">
+          <ScalarProperty Name="TENTK" ColumnName="TENTK" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ConfigureCascadeDelete" FunctionName="QLCaPheModel.Store.ConfigureCascadeDelete" />
+    <FunctionImportMapping FunctionImportName="DELETE_NHAN_VIEN_VA_TK" FunctionName="QLCaPheModel.Store.DELETE_NHAN_VIEN_VA_TK" />
+    <FunctionImportMapping FunctionImportName="INSERT_IN_FIRST_AVAILABLE_POSITION_NV_TK" FunctionName="QLCaPheModel.Store.INSERT_IN_FIRST_AVAILABLE_POSITION_NV_TK" />
+    <FunctionImportMapping FunctionImportName="UPDATE_NV_TK" FunctionName="QLCaPheModel.Store.UPDATE_NV_TK" />
+    <FunctionImportMapping FunctionImportName="INSERT_IN_FIRST_AVAILABLE_DO_UONG" FunctionName="QLCaPheModel.Store.INSERT_IN_FIRST_AVAILABLE_DO_UONG" />
+    <FunctionImportMapping FunctionImportName="LOAD_TK_DE_LOGIN3" FunctionName="QLCaPheModel.Store.LOAD_TK_DE_LOGIN3">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_TK_DE_LOGIN3_Result">
+          <ScalarProperty Name="TENTK" ColumnName="TENTK" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LOAD_TK_NHAN_VIEN_DE_TIM" FunctionName="QLCaPheModel.Store.LOAD_TK_NHAN_VIEN_DE_TIM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_TK_NHAN_VIEN_DE_TIM_Result">
+          <ScalarProperty Name="IDNV_A" ColumnName="IDNV_A" />
+          <ScalarProperty Name="TENTK" ColumnName="TENTK" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="IDNV_B" ColumnName="IDNV_B" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="XOA_BAN" FunctionName="QLCaPheModel.Store.XOA_BAN" />
+    <FunctionImportMapping FunctionImportName="XOA_TABLE" FunctionName="QLCaPheModel.Store.XOA_TABLE" />
+    <FunctionImportMapping FunctionImportName="INSERT_IN_FIRST_AVAILABLE_TABLE" FunctionName="QLCaPheModel.Store.INSERT_IN_FIRST_AVAILABLE_TABLE" />
+    <FunctionImportMapping FunctionImportName="DELETE_ALL_HOA_DON" FunctionName="QLCaPheModel.Store.DELETE_ALL_HOA_DON" />
+    <FunctionImportMapping FunctionImportName="INSERT_IN_FIRST_AVAILABLE_TABLE2" FunctionName="QLCaPheModel.Store.INSERT_IN_FIRST_AVAILABLE_TABLE2" />
+    <FunctionImportMapping FunctionImportName="Them_DATA_VAO_TABLE" FunctionName="QLCaPheModel.Store.Them_DATA_VAO_TABLE" />
+    <FunctionImportMapping FunctionImportName="Get_ALL_Table" FunctionName="QLCaPheModel.Store.Get_ALL_Table">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.Get_ALL_Table_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="XOA_MON_CUOI_CUNG_TRONG_LIST_VIEW" FunctionName="QLCaPheModel.Store.XOA_MON_CUOI_CUNG_TRONG_LIST_VIEW" />
+    <FunctionImportMapping FunctionImportName="DELETE_HOA_DON_VOI_ID" FunctionName="QLCaPheModel.Store.DELETE_HOA_DON_VOI_ID" />
+    <FunctionImportMapping FunctionImportName="INSERT_IN_FIRST_AVAILABLE_HOA_DON" FunctionName="QLCaPheModel.Store.INSERT_IN_FIRST_AVAILABLE_HOA_DON" />
+    <FunctionImportMapping FunctionImportName="SP_INSERT_OR_UPDATE_IN_FIRST_AVAILABLE_HOA_DON" FunctionName="QLCaPheModel.Store.SP_INSERT_OR_UPDATE_IN_FIRST_AVAILABLE_HOA_DON" />
+    <FunctionImportMapping FunctionImportName="INSERT_HOADON_THANH_TOAN" FunctionName="QLCaPheModel.Store.INSERT_HOADON_THANH_TOAN" />
+    <FunctionImportMapping FunctionImportName="LOAD_HOA_DON_THANH_TOAN" FunctionName="QLCaPheModel.Store.LOAD_HOA_DON_THANH_TOAN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLCaPheModel.LOAD_HOA_DON_THANH_TOAN_Result">
+          <ScalarProperty Name="IDBAN" ColumnName="IDBAN" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="TENMONAN" ColumnName="TENMONAN" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ThanhToanTableList2" FunctionName="QLCaPheModel.Store.ThanhToanTableList2" />
+  </EntityContainerMapping>
+</Mapping>

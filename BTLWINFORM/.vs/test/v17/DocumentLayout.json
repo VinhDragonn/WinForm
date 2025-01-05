@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|c:\\users\\hp\\onedrive\\documents\\btlwinform\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\doanhthu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:doanhthu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|test||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\model\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:model\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:ban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB1C9EB-E586-4900-BC0A-DA1C064BEE00}|test.csproj|solutionrelative:table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 166,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Ban.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.cs",
+              "RelativeDocumentMoniker": "Ban.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.cs",
+              "RelativeToolTip": "Ban.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAAAHoBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:11:54.393Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DangKy.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.Designer.cs",
+              "RelativeDocumentMoniker": "DangKy.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.Designer.cs",
+              "RelativeToolTip": "DangKy.Designer.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAvwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T05:53:06.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoanhThu.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.cs",
+              "RelativeDocumentMoniker": "DoanhThu.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.cs",
+              "RelativeToolTip": "DoanhThu.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswHkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T06:02:12.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThucDon.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ThucDon.cs",
+              "RelativeDocumentMoniker": "ThucDon.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ThucDon.cs",
+              "RelativeToolTip": "ThucDon.cs",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAcwBABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:42:27.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoanhThu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.cs",
+              "RelativeDocumentMoniker": "DoanhThu.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.cs [Design]",
+              "RelativeToolTip": "DoanhThu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T05:28:47.17Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "test",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\test.csproj",
+              "RelativeDocumentMoniker": "test.csproj",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\test.csproj",
+              "RelativeToolTip": "test.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-04T17:01:40.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DangXuat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangXuat.cs",
+              "RelativeDocumentMoniker": "DangXuat.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangXuat.cs [Design]",
+              "RelativeToolTip": "DangXuat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:53:23.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Table.cs",
+              "RelativeDocumentMoniker": "Table.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Table.cs",
+              "RelativeToolTip": "Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:25:33.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.cs",
+              "RelativeDocumentMoniker": "DangKy.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.cs",
+              "RelativeToolTip": "DangKy.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAUwMAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:54:27.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.cs",
+              "RelativeDocumentMoniker": "DangKy.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangKy.cs [Design]",
+              "RelativeToolTip": "DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:43:47.719Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoanhThu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.Designer.cs",
+              "RelativeDocumentMoniker": "DoanhThu.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DoanhThu.Designer.cs",
+              "RelativeToolTip": "DoanhThu.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:19:54.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaiKhoan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\TaiKhoan.cs [Design]",
+              "RelativeToolTip": "TaiKhoan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T05:04:34.655Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ThucDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ThucDon.cs",
+              "RelativeDocumentMoniker": "ThucDon.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\ThucDon.cs [Design]",
+              "RelativeToolTip": "ThucDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T13:56:47.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\model\\Model1.edmx",
+              "RelativeDocumentMoniker": "model\\Model1.edmx",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\model\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "model\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-26T13:24:59.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T02:33:59.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ban.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.cs",
+              "RelativeDocumentMoniker": "Ban.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.cs [Design]",
+              "RelativeToolTip": "Ban.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:10:56.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\TaiKhoan.cs",
+              "RelativeToolTip": "TaiKhoan.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAAAE4BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T13:18:50.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangNhap.cs",
+              "RelativeDocumentMoniker": "DangNhap.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangNhap.cs [Design]",
+              "RelativeToolTip": "DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T13:40:03.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangNhap.cs",
+              "RelativeDocumentMoniker": "DangNhap.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\DangNhap.cs",
+              "RelativeToolTip": "DangNhap.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T13:50:41.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Ban.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.Designer.cs",
+              "RelativeDocumentMoniker": "Ban.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\BTLWINFORM\\Ban.Designer.cs",
+              "RelativeToolTip": "Ban.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:49:39.373Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

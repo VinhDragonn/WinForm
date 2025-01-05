@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLCaPheModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DANHMUC_DOUONG">
+    <Key>
+      <PropertyRef Name="IDDM" />
+    </Key>
+    <Property Name="IDDM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENDM" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DOUONG">
+    <Key>
+      <PropertyRef Name="IDDOUONG" />
+    </Key>
+    <Property Name="IDDOUONG" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDDM" Type="int" Nullable="false" />
+    <Property Name="TENDOUONG" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DONGIA" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="IDHOADON" />
+    </Key>
+    <Property Name="IDHOADON" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDBAN" Type="int" Nullable="false" />
+    <Property Name="TenMon" Type="nvarchar" MaxLength="20" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="DonGia" Type="int" />
+    <Property Name="ThanhTien" Type="int" />
+  </EntityType>
+  <EntityType Name="HOADON_OLD">
+    <Key>
+      <PropertyRef Name="IDHD_OLD" />
+    </Key>
+    <Property Name="IDHD_OLD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDBAN" Type="int" Nullable="false" />
+    <Property Name="TENNV" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="TENMONAN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TENKH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NGAYLAP" Type="date" />
+    <Property Name="TONGTIEN" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENNV" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NGAYSINH" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="GIOITINH" Type="nchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TableFood">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="100" />
+    <Property Name="status" Type="nvarchar" MaxLength="100" />
+    <Property Name="TenKH" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="TENTK" />
+    </Key>
+    <Property Name="TENTK" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MATKHAU" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="QUYEN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IDNV" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_IDBAN">
+    <End Role="TableFood" Type="Self.TableFood" Multiplicity="1" />
+    <End Role="HOADON_OLD" Type="Self.HOADON_OLD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableFood">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HOADON_OLD">
+        <PropertyRef Name="IDBAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDBANHD">
+    <End Role="TableFood" Type="Self.TableFood" Multiplicity="1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableFood">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="IDBAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDDM">
+    <End Role="DANHMUC_DOUONG" Type="Self.DANHMUC_DOUONG" Multiplicity="1" />
+    <End Role="DOUONG" Type="Self.DOUONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DANHMUC_DOUONG">
+        <PropertyRef Name="IDDM" />
+      </Principal>
+      <Dependent Role="DOUONG">
+        <PropertyRef Name="IDDM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDNVTK">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+    <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="TAIKHOAN">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ConfigureCascadeDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DELETE_ALL_HOA_DON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDban" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DANHMUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDM" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DOUONG3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDOUONG" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_HOA_DON_VOI_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDhoaDon" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_HOA_DON3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idHD" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_NHAN_VIEN_VA_TK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDNV" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteBanDaThanhToan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idban" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EDIT_HOA_DON_NEW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDHD" Type="int" Mode="In" />
+    <Parameter Name="TenMon" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoLuong" Type="int" Mode="In" />
+    <Parameter Name="DonGia" Type="int" Mode="In" />
+    <Parameter Name="ThanhTien" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Get_ALL_Table" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetTableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="INSERT_DANHMUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TENDM" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_HOA_DON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDBAN" Type="int" Mode="In" />
+    <Parameter Name="TenMon" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoLuong" Type="int" Mode="In" />
+    <Parameter Name="DonGia" Type="int" Mode="In" />
+    <Parameter Name="ThanhTien" Type="int" Mode="In" />
+  </Function>
+  <Function Name="INSERT_HOADON_OLD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDBAN" Type="int" Mode="In" />
+    <Parameter Name="TENNV" Type="nvarchar" Mode="In" />
+    <Parameter Name="TENMONAN" Type="nvarchar" Mode="In" />
+    <Parameter Name="NGAYLAP" Type="date" Mode="In" />
+    <Parameter Name="TONGTIEN" Type="float" Mode="In" />
+  </Function>
+  <Function Name="INSERT_HOADON_THANH_TOAN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDBAN" Type="int" Mode="In" />
+    <Parameter Name="TENNV" Type="nvarchar" Mode="In" />
+    <Parameter Name="TENMONAN" Type="nvarchar" Mode="In" />
+    <Parameter Name="TENKH" Type="nvarchar" Mode="In" />
+    <Parameter Name="NGAYLAP" Type="date" Mode="In" />
+    <Parameter Name="TONGTIEN" Type="float" Mode="In" />
+  </Function>
+  <Function Name="INSERT_IN_FIRST_AVAILABLE_DO_UONG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDM" Type="int" Mode="In" />
+    <Parameter Name="TENDOUONG" Type="nvarchar" Mode="In" />
+    <Parameter Name="DONGIA" Type="float" Mode="In" />
+  </Function>
+  <Function Name="INSERT_IN_FIRST_AVAILABLE_HOA_DON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDBAN" Type="int" Mode="In" />
+    <Parameter Name="TenMon" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoLuong" Type="int" Mode="In" />
+    <Parameter Name="DonGia" Type="int" Mode="In" />
+    <Parameter Name="ThanhTien" Type="int" Mode="In" />
+  </Function>
+  <Function Name="INSERT_IN_FIRST_AVAILABLE_POSITION_NV_TK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TENNV" Type="nvarchar" Mode="In" />
+    <Parameter Name="NGAYSINH" Type="date" Mode="In" />
+    <Parameter Name="SDT" Type="char" Mode="In" />
+    <Parameter Name="GIOITINH" Type="nchar" Mode="In" />
+    <Parameter Name="TENTK" Type="varchar" Mode="In" />
+    <Parameter Name="MATKHAU" Type="varchar" Mode="In" />
+    <Parameter Name="QUYEN" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_IN_FIRST_AVAILABLE_TABLE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="INSERT_IN_FIRST_AVAILABLE_TABLE2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="INSERT_NHANVIEN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TENNV" Type="nvarchar" Mode="In" />
+    <Parameter Name="NGAYSINH" Type="date" Mode="In" />
+    <Parameter Name="SDT" Type="char" Mode="In" />
+    <Parameter Name="GIOITINH" Type="nchar" Mode="In" />
+  </Function>
+  <Function Name="InsertTableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LOAD_DANHMUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_DOUONG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_DOUONG_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDM" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LOAD_DOUONG_WITH_WHERE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MADM" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LOAD_HOA_DON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_HOA_DON_NEW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_HOA_DON_THANH_TOAN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_INDSDOUONG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_TK_DE_LOGIN3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOAD_TK_NHAN_VIEN_DE_TIM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOADHOADON_OLD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LOADTAIKHOANVANHANVIEN4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_INSERT_OR_UPDATE_IN_FIRST_AVAILABLE_HOA_DON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDBAN" Type="int" Mode="In" />
+    <Parameter Name="TenMon" Type="nvarchar" Mode="In" />
+    <Parameter Name="SoLuong" Type="int" Mode="In" />
+    <Parameter Name="DonGia" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ThanhToanTableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ThanhToanTableList2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Them_DATA_VAO_TABLE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+    <Parameter Name="Tenkh" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ThemTableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_DANHMUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDM" Type="int" Mode="In" />
+    <Parameter Name="TENDM" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_DOUONG2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDDOUONG" Type="int" Mode="In" />
+    <Parameter Name="TENDOUONG" Type="nvarchar" Mode="In" />
+    <Parameter Name="DONGIA" Type="float" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_NV_TK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idNV" Type="int" Mode="In" />
+    <Parameter Name="TENNV" Type="nvarchar" Mode="In" />
+    <Parameter Name="NGAYSINH" Type="date" Mode="In" />
+    <Parameter Name="SDT" Type="char" Mode="In" />
+    <Parameter Name="GIOITINH" Type="nchar" Mode="In" />
+    <Parameter Name="TENTK" Type="varchar" Mode="In" />
+    <Parameter Name="MATKHAU" Type="varchar" Mode="In" />
+    <Parameter Name="QUYEN" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="XOA_BAN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Idban" Type="int" Mode="In" />
+  </Function>
+  <Function Name="XOA_MON_CUOI_CUNG_TRONG_LIST_VIEW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+  </Function>
+  <Function Name="XOA_TABLE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Idban" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="QLCaPheModelStoreContainer">
+    <EntitySet Name="DANHMUC_DOUONG" EntityType="Self.DANHMUC_DOUONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DOUONG" EntityType="Self.DOUONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOADON_OLD" EntityType="Self.HOADON_OLD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TableFood" EntityType="Self.TableFood" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_IDBAN" Association="Self.FK_IDBAN">
+      <End Role="TableFood" EntitySet="TableFood" />
+      <End Role="HOADON_OLD" EntitySet="HOADON_OLD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDBANHD" Association="Self.FK_IDBANHD">
+      <End Role="TableFood" EntitySet="TableFood" />
+      <End Role="HOADON" EntitySet="HOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDDM" Association="Self.FK_IDDM">
+      <End Role="DANHMUC_DOUONG" EntitySet="DANHMUC_DOUONG" />
+      <End Role="DOUONG" EntitySet="DOUONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDNVTK" Association="Self.FK_IDNVTK">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="TAIKHOAN" EntitySet="TAIKHOAN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
